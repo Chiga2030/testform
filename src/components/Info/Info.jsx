@@ -1,6 +1,7 @@
-import styles from './Info.module.css';
-
-const Info = () => (
+const Info = ({
+  styles,
+  ...props
+}) => (
   <>
     <h2 className={styles.title}>
       Info

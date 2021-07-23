@@ -5,3 +5,29 @@
   border-radius: 0 10% 10%;
   padding: 2.24vw 2.12vw;
 }
+
+.title {
+  margin: 0 0 .9vw;
+  font-size: 1.13vw;
+}
+
+.subtitle {
+  margin: 0 0 .7vw;
+  font-size: 1vw;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid var(--stroke-color);
+  font-size: 0.9vw;
+  letter-spacing: .075vw;
+  margin: 0;
+  padding: 0 0 0.5vw;
+  width: 100%;
+  color: var(--main-text-color);
+  display: block;
+}
+
+.input::placeholder {
+  color: var(--placeholder-text-color);
+}
