@@ -1,6 +1,7 @@
 .form {
-  /*background: red;*/
-  width: 27.4vw;
-  height: 72.2vh;
+  background: #fff;
+  width: 23.24vw;
+  height: 57.6vh;
   border-radius: 0 10% 10%;
+  padding: 2.22vw 2.12vw;
 }
