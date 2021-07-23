@@ -1,4 +1,24 @@
 .title {
-  margin: 0;
+  margin: 0 0 .9vw;
   font-size: 1.13vw;
+}
+
+.subtitle {
+  margin: 0 0 .6vw;
+  font-size: 1vw;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid #E1E3EE;
+  font-size: 0.9vw;
+  letter-spacing: .075vw;
+  margin: 0;
+  padding: 0 0 0.5vw;
+  width: 100%;
+  color: #1C154E;
+}
+
+.input::placeholder {
+  color: #D0D3E2;
 }
