@@ -6,6 +6,10 @@
   padding: 2.24vw 2.12vw;
 }
 
+.blockMargins {
+  margin-bottom: 1.6vw;
+}
+
 .title {
   margin: 0 0 .9vw;
   font-size: 1.13vw;

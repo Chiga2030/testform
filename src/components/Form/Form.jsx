@@ -5,7 +5,9 @@ import ProductList from '../ProductList/ProductList';
 
 const Form = () => (
   <form className={styles.form}>
-    <Info styles={styles} />
+    <Info
+      styles={styles}
+    />
     <ProductList styles={styles} />
   </form>
 );

@@ -3,7 +3,7 @@ const ProductList = ({
   ...props
 }) => (
   <>
-    <h2 className={styles.title}>ProductList</h2>
+    <h2 className={styles.title}>Product 1</h2>
   </>
 );
 

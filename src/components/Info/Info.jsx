@@ -2,7 +2,7 @@ const Info = ({
   styles,
   ...props
 }) => (
-  <>
+  <div className={styles.blockMargins}>
     <h2 className={styles.title}>
       Info
     </h2>
@@ -16,7 +16,7 @@ const Info = ({
         type="email"
       />
     </label>
-  </>
+  </div>
 );
 
 export default Info;
