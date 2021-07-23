@@ -1,6 +1,15 @@
+:root {
+  --main-text-color: #1C154E;
+  --placeholder-text-color:  #D0D3E2;
+
+  --stroke-color: #E1E3EE;
+
+  --main-bg-color: #fff;
+}
+
 body {
   background: #F4F5FA;
-  color: #1C154E;
+  color: var(--main-text-color);
   font-family: gilroy;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
