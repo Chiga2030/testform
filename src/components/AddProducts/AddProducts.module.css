@@ -1,0 +1,11 @@
+.button {
+  background: url(./img/plus.svg) no-repeat center right;
+  border: none;
+  color: var(--main-button-color);
+  cursor: pointer;
+  font-size: 1.1vw;
+  font-weight: 600;
+  padding: 0;
+  text-align: left;
+  width: 11.2vw;
+}

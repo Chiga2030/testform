@@ -4,6 +4,7 @@ import styles from './Form.module.css';
 
 import Info from '../Info/Info';
 import ProductList from '../ProductList/ProductList';
+import AddProducts from '../AddProducts/AddProducts';
 
 const defaultProducts = [
   {
@@ -26,6 +27,7 @@ const Form = () => {
         styles={styles}
         products={products}
       />
+      <AddProducts />
     </form>
   )
 };
