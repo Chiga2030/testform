@@ -40,7 +40,8 @@ const Form = () => {
         styles={styles}
       />
       <SubmitButton
-      value={`Submit and Pay ${price} USD`}
+        value={`Submit and Pay ${price} USD`}
+        bgColor="success"
       />
     </form>
   )

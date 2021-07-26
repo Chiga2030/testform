@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import styles from './AddProducts.module.css';
 
 const AddProducts = props => (
-  <>
+  <div className={props.styles.blockMarginsSmall}>
     <button
       type="button"
       className={classNames(
@@ -16,7 +16,7 @@ const AddProducts = props => (
     <p className={props.styles.subtitle}>
       We offer discount up to 36% for multiple checks
     </p>
-  </>
+  </div>
 );
 
 export default AddProducts;

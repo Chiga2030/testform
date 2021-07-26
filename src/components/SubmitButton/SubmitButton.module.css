@@ -1,0 +1,18 @@
+.button {
+  width: 100%;
+  border: none;
+  height: 2.8vw;
+  border-radius: 0.95vw;
+  margin: 0;
+  color: var(--text-button-color);
+  font-size: 1.1vw;
+  font-weight: 700;
+}
+
+.bgColor-success {
+  background: var(--main-button-color);
+}
+
+.bgColor-fail {
+  background: var(--additional-button-color);
+}
