@@ -6,12 +6,8 @@
   padding: 2.24vw 2.12vw;
 }
 
-.blockMargins {
-  margin-bottom: 1.6vw;
-}
-
 .title {
-  margin: 0 0 .9vw;
+  margin: 0;
   font-size: 1.13vw;
 }
 
@@ -34,4 +30,16 @@
 
 .input::placeholder {
   color: var(--placeholder-text-color);
+}
+
+.blockMargins {
+  margin-bottom: 1.6vw;
+}
+
+.infoTitleMargin {
+  margin-bottom: .9vw;
+}
+
+.productTitleMargin {
+  margin-bottom: 0.95vw;
 }
