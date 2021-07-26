@@ -6,6 +6,7 @@ import Info from '../Info/Info';
 import ProductList from '../ProductList/ProductList';
 import AddProducts from '../AddProducts/AddProducts';
 import SubmitButton from '../SubmitButton/SubmitButton';
+import SecurePayment from '../SecurePayment/SecurePayment';
 
 const defaultProducts = [
   {
@@ -40,9 +41,11 @@ const Form = () => {
         styles={styles}
       />
       <SubmitButton
+        styles={styles}
         value={`Submit and Pay ${price} USD`}
         bgColor="success"
       />
+      <SecurePayment />
     </form>
   )
 };

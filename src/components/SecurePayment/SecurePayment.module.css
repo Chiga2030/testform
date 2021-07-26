@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.imgLabel {
+  margin-right: .2vw;
+}
+
+.textField {
+  font-size: 0.8vw;
+  letter-spacing: .04vw;
+  color: var(--additional-text-color);
+}
