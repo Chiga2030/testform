@@ -3,7 +3,6 @@ import classNames from 'classnames';
 const Product = ({
   styles,
   product,
-  ...props
 }) => (
   <div className={styles.blockMargins}>
     <h2 className={classNames(

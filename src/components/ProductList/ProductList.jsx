@@ -3,7 +3,6 @@ import Product from '../Product/Product';
 const ProductList = ({
   styles,
   products,
-  ...props
 }) => (
   <div className={styles.blockMargins}>
     {products.map(

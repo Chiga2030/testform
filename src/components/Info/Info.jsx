@@ -2,7 +2,6 @@ import classNames from 'classnames';
 
 const Info = ({
   styles,
-  ...props
 }) => (
   <div className={styles.blockMargins}>
     <h2 className={classNames(

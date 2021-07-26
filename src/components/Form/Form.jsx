@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import {
+  useState,
+} from 'react';
 
 import styles from './Form.module.css';
 
@@ -19,12 +21,12 @@ const defaultPrice = 24.99;
 const Form = () => {
   const [
     products,
-    setProducts
+    // setProducts,
   ] = useState(defaultProducts);
 
   const [
     price,
-    setPrice
+    // setPrice,
   ] = useState(defaultPrice);
 
 
@@ -47,7 +49,7 @@ const Form = () => {
       />
       <SecurePayment />
     </form>
-  )
+  );
 };
 
 export default Form;
