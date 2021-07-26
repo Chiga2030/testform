@@ -13,6 +13,7 @@ const SubmitButton = ({
         styles.button,
         styles[`bgColor-${bgColor}`],
       )}
+      type="button"
     >
       {value}
     </button>
