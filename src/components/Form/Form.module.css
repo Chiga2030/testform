@@ -40,6 +40,10 @@
   margin-bottom: 1.1vw;
 }
 
+.blockMarginsVerySmall {
+  margin-bottom: 0.7vw;
+}
+
 .infoTitleMargin {
   margin-bottom: .9vw;
 }
