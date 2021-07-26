@@ -4,6 +4,7 @@
   height: 28.8vw;
   padding: 2.24vw 2.12vw;
   width: 23.24vw;
+  box-shadow: .5vw .5vw 3vw var(--shadow-color);
 }
 
 .title {
