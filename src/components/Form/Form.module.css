@@ -19,10 +19,10 @@
 .input {
   border: none;
   border-bottom: 1px solid var(--stroke-color);
-  font-size: 0.9vw;
+  font-size: .9vw;
   letter-spacing: .075vw;
   margin: 0 0 1vw;
-  padding: 0 0 0.5vw;
+  padding: 0 0 .5vw;
   width: 100%;
   color: var(--main-text-color);
   display: block;
