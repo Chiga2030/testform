@@ -7,7 +7,7 @@ const SubmitButton = ({
   bgColor,
   ...props
 }) => (
-  <>
+  <div className={props.styles.blockMarginsVerySmall}>
     <button
       className={classNames(
         styles.button,
@@ -16,7 +16,7 @@ const SubmitButton = ({
     >
       {value}
     </button>
-  </>
+  </div>
 );
 
 export default SubmitButton;
