@@ -12,7 +12,7 @@
 }
 
 .subtitle {
-  margin: 0 0 .7vw;
+  margin: 0;
   font-size: 1vw;
 }
 
@@ -21,7 +21,7 @@
   border-bottom: 1px solid var(--stroke-color);
   font-size: 0.9vw;
   letter-spacing: .075vw;
-  margin: 0;
+  margin: 0 0 1vw;
   padding: 0 0 0.5vw;
   width: 100%;
   color: var(--main-text-color);
@@ -40,6 +40,14 @@
   margin-bottom: .9vw;
 }
 
+.infoSubtitleMargin {
+  margin-bottom: .7vw;
+}
+
 .productTitleMargin {
   margin-bottom: 0.95vw;
+}
+
+.productSubtitleMargin {
+  margin-bottom: 1.05vw;
 }

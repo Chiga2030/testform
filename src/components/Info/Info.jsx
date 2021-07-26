@@ -12,7 +12,10 @@ const Info = ({
       Info
     </h2>
     <label>
-      <p className={styles.subtitle}>
+      <p className={classNames(
+        styles.subtitle,
+        styles.infoSubtitleMargin,
+      )}>
         Enter your email address
       </p>
       <input

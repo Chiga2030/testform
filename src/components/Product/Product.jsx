@@ -13,7 +13,10 @@ const Product = ({
       {product.name}
     </h2>
     <label>
-      <p className={styles.subtitle}>
+      <p className={classNames(
+        styles.subtitle,
+        styles.productSubtitleMargin,
+      )}>
         Enter main keyword for the product
       </p>
       <input
@@ -23,7 +26,10 @@ const Product = ({
       />
     </label>
     <label>
-      <p className={styles.subtitle}>
+      <p className={classNames(
+        styles.subtitle,
+        styles.productSubtitleMargin,
+      )}>
         Enter link to the similar product as a reference
       </p>
       <input
