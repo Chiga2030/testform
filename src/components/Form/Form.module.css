@@ -1,31 +1,31 @@
 .form {
   background: var(--main-bg-color);
-  width: 23.24vw;
-  height: 28.8vw;
   border-radius: 0 10% 10%;
+  height: 28.8vw;
   padding: 2.24vw 2.12vw;
+  width: 23.24vw;
 }
 
 .title {
-  margin: 0;
   font-size: 1.13vw;
+  margin: 0;
 }
 
 .subtitle {
-  margin: 0;
   font-size: 1vw;
+  margin: 0;
 }
 
 .input {
-  border: none;
   border-bottom: 1px solid var(--stroke-color);
+  border: none;
+  color: var(--main-text-color);
+  display: block;
   font-size: .9vw;
   letter-spacing: .075vw;
   margin: 0 0 1vw;
   padding: 0 0 .5vw;
   width: 100%;
-  color: var(--main-text-color);
-  display: block;
 }
 
 .input::placeholder {
@@ -50,4 +50,8 @@
 
 .productSubtitleMargin {
   margin-bottom: 1.05vw;
+}
+
+.addProductButtonMargin {
+  margin-bottom: 0.7vw;
 }
