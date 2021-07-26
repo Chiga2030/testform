@@ -9,7 +9,7 @@
 }
 
 .textField {
-  font-size: 0.8vw;
+  font-size: .8vw;
   letter-spacing: .04vw;
   color: var(--additional-text-color);
 }

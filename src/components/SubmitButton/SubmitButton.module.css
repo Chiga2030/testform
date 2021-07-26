@@ -1,5 +1,5 @@
 .button {
-  border-radius: 0.95vw;
+  border-radius: .95vw;
   border: none;
   color: var(--text-button-color);
   cursor: pointer;

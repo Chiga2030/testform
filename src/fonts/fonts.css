@@ -1,27 +1,29 @@
 @font-face {
-    font-family: gilroy;
-    src: url('./gilroy/gilroy-medium.woff2') format('woff2'),
+  font-family: gilroy;
+  src:
+    url('./gilroy/gilroy-medium.woff2') format('woff2'),
     url('./gilroy/gilroy-medium.woff') format('woff'),
     url('./gilroy/gilroy-medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: gilroy;
-    src: url('./gilroy/gilroy-semibold.woff2') format('woff2'),
+  font-family: gilroy;
+  src:
+    url('./gilroy/gilroy-semibold.woff2') format('woff2'),
     url('./gilroy/gilroy-semibold.woff') format('woff'),
     url('./gilroy/gilroy-semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: gilroy;
-    src: url('./gilroy/gilroy-bold.woff2') format('woff2'),
+  font-family: gilroy;
+  src:
+    url('./gilroy/gilroy-bold.woff2') format('woff2'),
     url('./gilroy/gilroy-bold.woff') format('woff'),
     url('./gilroy/gilroy-bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-weight: 700;
+  font-style: normal;
 }
-
