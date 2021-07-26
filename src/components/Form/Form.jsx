@@ -27,7 +27,9 @@ const Form = () => {
         styles={styles}
         products={products}
       />
-      <AddProducts />
+      <AddProducts
+        styles={styles}
+      />
     </form>
   )
 };
