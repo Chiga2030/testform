@@ -17,8 +17,8 @@
 }
 
 .input {
-  border-bottom: 1px solid var(--stroke-color);
   border: none;
+  border-bottom: 1px solid var(--stroke-color);
   color: var(--main-text-color);
   display: block;
   font-size: .9vw;
