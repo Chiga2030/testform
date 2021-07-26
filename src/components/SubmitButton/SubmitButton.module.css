@@ -1,12 +1,13 @@
 .button {
-  width: 100%;
-  border: none;
-  height: 2.8vw;
   border-radius: 0.95vw;
-  margin: 0;
+  border: none;
   color: var(--text-button-color);
+  cursor: pointer;
   font-size: 1.1vw;
   font-weight: 700;
+  height: 2.8vw;
+  margin: 0;
+  width: 100%;
 }
 
 .bgColor-success {
