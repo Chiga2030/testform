@@ -5,6 +5,7 @@ import styles from './Form.module.css';
 import Info from '../Info/Info';
 import ProductList from '../ProductList/ProductList';
 import AddProducts from '../AddProducts/AddProducts';
+import SubmitButton from '../SubmitButton/SubmitButton';
 
 const defaultProducts = [
   {
@@ -15,8 +16,16 @@ const defaultProducts = [
 const defaultPrice = 24.99;
 
 const Form = () => {
-  const [products, setProducts] = useState(defaultProducts);
-  const [price, setPrice] = useState(defaultPrice);
+  const [
+    products,
+    setProducts
+  ] = useState(defaultProducts);
+
+  const [
+    price,
+    setPrice
+  ] = useState(defaultPrice);
+
 
   return (
     <form className={styles.form}>
@@ -29,6 +38,9 @@ const Form = () => {
       />
       <AddProducts
         styles={styles}
+      />
+      <SubmitButton
+      value={`Submit and Pay ${price} USD`}
       />
     </form>
   )
