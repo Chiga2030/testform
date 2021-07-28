@@ -4,11 +4,8 @@ import {
 
 import styles from './Form.module.css';
 
-import Info from '../Info/Info';
-import ProductList from '../ProductList/ProductList';
-import AddProducts from '../AddProducts/AddProducts';
-import SubmitButton from '../SubmitButton/SubmitButton';
-import SecurePayment from '../SecurePayment/SecurePayment';
+import Basket from '../Basket/Basket';
+import AddProductForm from '../AddProductForm/AddProductForm';
 
 const defaultProducts = [
   {
@@ -29,25 +26,23 @@ const Form = () => {
     // setPrice,
   ] = useState(defaultPrice);
 
+  const [
+    isAddProd,
+    // setIsAddProd,
+  ] = useState(true);
+
 
   return (
     <form className={styles.form}>
-      <Info
-        styles={styles}
-      />
-      <ProductList
-        styles={styles}
-        products={products}
-      />
-      <AddProducts
-        styles={styles}
-      />
-      <SubmitButton
-        styles={styles}
-        value={`Submit and Pay ${price} USD`}
-        bgColor="success"
-      />
-      <SecurePayment />
+      {!isAddProd ?
+        <Basket
+          styles={styles}
+          products={products}
+          price={price}
+        />
+        :
+        <AddProductForm />
+      }
     </form>
   );
 };
