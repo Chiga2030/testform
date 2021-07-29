@@ -35,6 +35,10 @@
   font-weight: 600;
 }
 
+.onlyTitle {
+  margin: 0;
+}
+
 .subtitle {
   font-size: 0.8vw;
   margin: 0;
