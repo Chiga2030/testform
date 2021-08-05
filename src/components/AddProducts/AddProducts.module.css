@@ -1,5 +1,5 @@
 .button {
-  background: url(./img/plus.svg) no-repeat center right;
+  background: url(./img/plus.svg) no-repeat center right/.9vw;
   border: none;
   color: var(--main-button-color);
   cursor: pointer;

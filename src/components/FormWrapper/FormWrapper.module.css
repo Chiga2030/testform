@@ -1,6 +1,6 @@
 .wrapper {
   background: url(./img/dottes.svg) no-repeat top right/6.5vw;
-  height: 36.4vw;
+  height: auto;
   width: 28.5vw;
   padding: 1vw 1vw 0 0;
 }
