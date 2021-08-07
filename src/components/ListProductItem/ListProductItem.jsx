@@ -1,5 +1,8 @@
 import classNames from 'classnames';
 
+import radio from './img/radio.svg';
+// import radioWithDot from './img/radioWithDot.svg';
+
 const ListProductItem = ({
   product,
   price,
@@ -9,12 +12,15 @@ const ListProductItem = ({
 }) => (
   <li className={props.styles.withBorderBottom}>
     <label className={props.styles.column}>
-      <input
-        className={props.styles.radio}
-        name="selectProduct"
-        type="radio"
-        value="5"
-      />
+      <span className={props.styles.radioBox}>
+        <img src={radio} alt=""/>
+        <input
+          className={props.styles.radio}
+          name="selectProduct"
+          type="radio"
+          value="5"
+        />
+      </span>
       <div className={props.styles.description}>
         <p className={classNames(
           props.styles.title,
