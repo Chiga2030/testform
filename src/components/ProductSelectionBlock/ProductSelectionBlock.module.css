@@ -1,10 +1,12 @@
 :root {
+  /*--border-size: 1px;*/
   --border-size: .16vw;
+  /*--border-size: .2vw;*/
 }
 
 .roundedEdges {
-  border: var(--border-size) solid var(--stroke-color);
-  border-radius: 1vw 1vw 2vw 2vw;
+  /*border: var(--border-size) solid var(--stroke-color);*/
+  /*border-radius: 1vw 1vw 2vw 2vw;*/
 }
 
 .list {
@@ -20,6 +22,19 @@
   padding: .7vw 0 .25vw 0;
   height: 2.6vw;
   cursor: pointer;
+  overflow: hidden;
+  border-bottom: var(--border-size) solid var(--stroke-color);
+  /*border: var(--border-size) solid var(--stroke-color);*/
+  /*border: var(--border-size) solid var(--stroke-color);*/
+  /*border: var(--border-size) solid var(--stroke-color);*/
+}
+/*
+.column:hover {
+  background-color: var(--stroke-color);
+}*/
+
+.selectedColumn {
+  background-color: var(--stroke-color);
 }
 
 .withBorderBottom:not(:last-child) {
@@ -32,6 +47,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.radioImg {
+  height: 1.4vw;
+  width: 1.4vw;
 }
 
 .radio {
@@ -63,6 +83,10 @@
 .subtitle {
   font-size: 0.8vw;
   margin: 0;
+  color: var(--unchoiced-text-color);
+}
+
+.choicedSubtitle {
   color: var(--main-button-color);
 }
 

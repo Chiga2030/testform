@@ -21,7 +21,11 @@ const ListProductItem = ({
       className={props.styles.column}
     >
       <span className={props.styles.radioBox}>
-        <img src={isSelect ? radioWithDot : radio} alt=""/>
+        <img
+          className={props.styles.radioImg}
+          src={isSelect ? radioWithDot : radio}
+          alt=""
+        />
         <input
           className={props.styles.radio}
           name="selectProduct"
@@ -42,7 +46,12 @@ const ListProductItem = ({
         </p>
         {
           (discount ?
-            (<p className={props.styles.subtitle}>
+            (<p className={classNames(
+              props.styles.subtitle,
+              {
+                [props.styles.choicedSubtitle]: isSelect,
+              },
+            )}>
               You safe ${discount}% on each patent check
             </p>) : ''
           )}
