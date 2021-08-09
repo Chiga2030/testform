@@ -14,11 +14,16 @@ const ListProductItem = ({
   ...props
 }) => (
   <li
-    className={props.styles.withBorderBottom}
+    className={props.styles.listItem}
     onChange={() => onSelect(id)}
   >
     <label
-      className={props.styles.column}
+      className={classNames(
+        props.styles.column,
+        {
+          [props.styles.selectedColumn]: isSelect,
+        },
+      )}
     >
       <span className={props.styles.radioBox}>
         <img

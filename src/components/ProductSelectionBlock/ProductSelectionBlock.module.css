@@ -1,12 +1,5 @@
 :root {
-  /*--border-size: 1px;*/
-  --border-size: .16vw;
-  /*--border-size: .2vw;*/
-}
-
-.roundedEdges {
-  /*border: var(--border-size) solid var(--stroke-color);*/
-  /*border-radius: 1vw 1vw 2vw 2vw;*/
+  --border-size: 1px;
 }
 
 .list {
@@ -15,30 +8,38 @@
   margin: 0;
 }
 
+.listItem {
+  border-left: var(--border-size) solid var(--stroke-color);
+  border-right: var(--border-size) solid var(--stroke-color);
+  border-top: var(--border-size) solid var(--stroke-color);
+  overflow: hidden;
+}
+
+.listItem:first-child {
+  border-radius: 1vw 1vw 0 0;
+}
+
+.listItem:last-child {
+  border-bottom: var(--border-size) solid var(--stroke-color);
+  border-radius: 0 0 2vw 2vw;
+}
+
 .column {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: .7vw 0 .25vw 0;
+  padding: .5vw 0;
   height: 2.6vw;
   cursor: pointer;
   overflow: hidden;
-  border-bottom: var(--border-size) solid var(--stroke-color);
-  /*border: var(--border-size) solid var(--stroke-color);*/
-  /*border: var(--border-size) solid var(--stroke-color);*/
-  /*border: var(--border-size) solid var(--stroke-color);*/
 }
-/*
+
 .column:hover {
-  background-color: var(--stroke-color);
-}*/
+  background-color: var(--additional-bg-color);
+}
 
 .selectedColumn {
-  background-color: var(--stroke-color);
-}
-
-.withBorderBottom:not(:last-child) {
-  border-bottom: var(--border-size) solid var(--stroke-color);
+  background-color: var(--additional-bg-color);
 }
 
 .radioBox {
@@ -52,6 +53,7 @@
 .radioImg {
   height: 1.4vw;
   width: 1.4vw;
+  z-index: 1;
 }
 
 .radio {
@@ -72,7 +74,7 @@
 
 .title {
   font-size: 1vw;
-  margin: 0 0 .45vw 0;
+  margin: 0 0 .35vw 0;
   font-weight: 600;
 }
 

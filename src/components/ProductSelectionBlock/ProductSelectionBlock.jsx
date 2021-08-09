@@ -4,8 +4,6 @@ import {
 
 import styles from './ProductSelectionBlock.module.css';
 
-import classNames from 'classnames';
-
 import ListProductItem from '../ListProductItem/ListProductItem';
 
 
@@ -76,10 +74,7 @@ const ProductSelectionBlock = () => {
 
 
   return (
-    <ul className={classNames(
-      styles.roundedEdges,
-      styles.list,
-    )}>
+    <ul className={styles.list}>
       {produstsList.map(
         item => (
           <ListProductItem
