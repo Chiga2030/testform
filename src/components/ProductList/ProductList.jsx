@@ -7,7 +7,6 @@ const ProductList = ({
   products,
 }) => (
   <div className={classNames(
-    styles.productList,
     styles.blockMargins,
   )}>
     {products.map(

@@ -6,7 +6,7 @@
   padding: 2.24vw 2.12vw;
   width: 23.24vw;
   box-shadow: .5vw .5vw 3vw var(--shadow-color);
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .title {
@@ -19,9 +19,38 @@
   margin: 0;
 }
 
+.productListWrapper {
+  overflow: hidden;
+  position: relative;
+}
+
 .productList {
-  height: 12.5vw;
-  overflow-y: scroll;
+  height: 24.2vw;
+  overflow: visible;
+  transform: translateY(-10vw);
+}
+
+.scrollWrapper {
+  overflow: visible;
+  position: relative;
+}
+
+.scroll {
+  height: 100%;
+  width: .25vw;
+  background: var(--stroke-color);
+  position: absolute;
+  right: 0vw;
+  top: 0;
+  transform: translateX(1.2vw);
+  border-radius: 2vw;
+}
+
+.scrollThumb {
+  width: .25vw;
+  height: 2vw;
+  background: var(--main-button-color);
+  border-radius: 2vw;
 }
 
 .input {
