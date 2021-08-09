@@ -27,7 +27,8 @@
 .productList {
   height: 24.2vw;
   overflow: visible;
-  transform: translateY(-10vw);
+  transition: transform linear 1s;
+  transform: translateY(0);
 }
 
 .scrollWrapper {
