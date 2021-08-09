@@ -15,6 +15,7 @@ const defaultProducts = [
 ];
 const defaultPrice = 24.99;
 
+
 const Form = () => {
   const [
     products,
@@ -28,8 +29,10 @@ const Form = () => {
 
   const [
     isAddProd,
-    // setIsAddProd,
-  ] = useState(true);
+    setIsAddProd,
+  ] = useState(false);
+
+  const onAddMoreProd = () => setIsAddProd(!isAddProd);
 
 
   return (
@@ -39,6 +42,7 @@ const Form = () => {
           styles={styles}
           products={products}
           price={price}
+          onAddMoreProd={onAddMoreProd}
         />
         :
         <AddProductForm />

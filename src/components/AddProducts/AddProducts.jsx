@@ -2,10 +2,14 @@ import classNames from 'classnames';
 
 import styles from './AddProducts.module.css';
 
-const AddProducts = props => (
+const AddProducts = ({
+  onAddMoreProd,
+  ...props
+}) => (
   <div className={props.styles.blockMarginsSmall}>
     <button
       type="button"
+      onClick={() => onAddMoreProd()}
       className={classNames(
         styles.button,
         props.styles.addProductButtonMargin,

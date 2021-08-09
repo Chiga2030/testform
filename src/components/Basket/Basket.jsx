@@ -9,6 +9,7 @@ const Basket = ({
   styles,
   products,
   price,
+  onAddMoreProd,
 }) => (
   <>
     <Info
@@ -20,6 +21,7 @@ const Basket = ({
     />
     <AddProducts
       styles={styles}
+      onAddMoreProd={onAddMoreProd}
     />
     <SubmitButton
       styles={styles}
