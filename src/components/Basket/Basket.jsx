@@ -10,6 +10,7 @@ const Basket = ({
   products,
   price,
   onAddMoreProd,
+  ...props
 }) => (
   <>
     <Info
@@ -19,10 +20,13 @@ const Basket = ({
       styles={styles}
       products={products}
     />
-    <AddProducts
-      styles={styles}
-      onAddMoreProd={onAddMoreProd}
-    />
+    {props.productCount < 5 ?
+      <AddProducts
+        styles={styles}
+        onAddMoreProd={onAddMoreProd}
+      /> :
+      ''
+    }
     <SubmitButton
       blockStyle={styles.blockMarginsVerySmall}
       value={`Submit and Pay ${price} USD`}

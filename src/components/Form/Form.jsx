@@ -63,7 +63,6 @@ const Form = () => {
 
   return (
     <form
-      id="form1"
       className={styles.form}
     >
       {!isAddProd ?
@@ -72,6 +71,7 @@ const Form = () => {
           products={products}
           price={price}
           onAddMoreProd={onAddMoreProd}
+          productCount={products.length}
         />
         :
         <AddProductForm

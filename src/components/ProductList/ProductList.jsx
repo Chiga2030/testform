@@ -1,10 +1,15 @@
+import classNames from 'classnames';
+
 import Product from '../Product/Product';
 
 const ProductList = ({
   styles,
   products,
 }) => (
-  <div className={styles.blockMargins}>
+  <div className={classNames(
+    styles.productList,
+    styles.blockMargins,
+  )}>
     {products.map(
       product => (
         <Product
