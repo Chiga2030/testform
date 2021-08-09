@@ -24,7 +24,7 @@ const Basket = ({
       onAddMoreProd={onAddMoreProd}
     />
     <SubmitButton
-      styles={styles}
+      blockStyle={styles.blockMarginsVerySmall}
       value={`Submit and Pay ${price} USD`}
       bgColor="success"
     />

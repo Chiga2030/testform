@@ -2,29 +2,40 @@ import {
   useState,
 } from 'react';
 
+import {
+  defaultProductList,
+  defaultProducts,
+  defaultPrice,
+} from './defaultStore';
+
 import styles from './Form.module.css';
 
 import Basket from '../Basket/Basket';
 import AddProductForm from '../AddProductForm/AddProductForm';
 
-const defaultProducts = [
-  {
-    id: 1,
-    name: 'Product 1',
-  },
-];
-const defaultPrice = 24.99;
-
 
 const Form = () => {
+  const addProduts = count => {
+    const newProducts = [];
+
+    for (let index = 1; index <= count; index++) {
+      newProducts.push({
+        id: index,
+        name: `Product ${index}`,
+      });
+    }
+
+    setProducts(newProducts);
+  };
+
   const [
     products,
-    // setProducts,
+    setProducts,
   ] = useState(defaultProducts);
 
   const [
     price,
-    // setPrice,
+    setPrice,
   ] = useState(defaultPrice);
 
   const [
@@ -34,9 +45,27 @@ const Form = () => {
 
   const onAddMoreProd = () => setIsAddProd(!isAddProd);
 
+  const [
+    productsList,
+    setProductsList,
+  ] = useState(defaultProductList);
+
+  const onSubmitMoreProd = () => {
+    const newProductsList = productsList.filter(
+      product => !!product.isSelect
+    );
+
+    setPrice(newProductsList[0].price);
+    addProduts(newProductsList[0].id);
+    setIsAddProd(false);
+  };
+
 
   return (
-    <form className={styles.form}>
+    <form
+      id="form1"
+      className={styles.form}
+    >
       {!isAddProd ?
         <Basket
           styles={styles}
@@ -45,7 +74,11 @@ const Form = () => {
           onAddMoreProd={onAddMoreProd}
         />
         :
-        <AddProductForm />
+        <AddProductForm
+          produstsList={productsList}
+          setProdustsList={setProductsList}
+          onSubmitMoreProd={onSubmitMoreProd}
+        />
       }
     </form>
   );
