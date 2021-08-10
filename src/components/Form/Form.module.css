@@ -2,11 +2,15 @@
   background: var(--main-bg-color);
   border-radius: 0 2vw 2vw;
   height: auto;
-  /*max-height: 29vw;*/
   padding: 2.24vw 2.12vw;
   width: 23.24vw;
   box-shadow: .5vw .5vw 3vw var(--shadow-color);
   overflow: hidden;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
 }
 
 .title {

@@ -22,6 +22,7 @@ const Form = () => {
       newProducts.push({
         id: index,
         name: `Product ${index}`,
+        isToDelete: true,
       });
     }
 

@@ -1,16 +1,24 @@
 import classNames from 'classnames';
 
+import DeleteButton from '../DeleteButton/DeleteButton';
+
+
 const Product = ({
   styles,
   product,
 }) => (
   <div className={styles.blockMargins}>
-    <h2 className={classNames(
-      styles.title,
+    <div className={classNames(
+      styles.titleWrapper,
       styles.productTitleMargin,
     )}>
-      {product.name}
-    </h2>
+      <h2 className={styles.title}>
+        {product.name}
+      </h2>
+      {
+        product.isToDelete ? <DeleteButton /> : ''
+      }
+    </div>
     <label>
       <p className={classNames(
         styles.subtitle,

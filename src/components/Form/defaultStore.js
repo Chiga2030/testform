@@ -44,6 +44,7 @@ export const defaultProducts = [
   {
     id: 1,
     name: 'Product 1',
+    isToDelete: false,
   },
 ];
 
