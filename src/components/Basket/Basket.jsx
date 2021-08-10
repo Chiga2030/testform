@@ -23,7 +23,7 @@ const Basket = ({
       }}
       autoHide={false}
       forceVisible={false}
-
+      scrollbarMaxSize="50"
       classNames={{
         scrollbar: 'simplebar-scrollbar',
         track: 'simplebar-track',

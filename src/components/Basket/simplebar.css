@@ -1,7 +1,7 @@
 .simplebar-scrollbar {
   background: var(--main-button-color);
   border-radius: 2vw;
-  width: 1vw;
+  /*height: 5vw!important;*/
 }
 
 .simplebar-track {
