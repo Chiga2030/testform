@@ -1,0 +1,24 @@
+.simplebar-scrollbar {
+  background: var(--main-button-color);
+  border-radius: 2vw;
+  width: 1vw;
+}
+
+.simplebar-track {
+  transform: translateX(1.2vw);
+  background: var(--stroke-color);
+  border-radius: 2vw;
+}
+
+.simplebar-track.simplebar-horizontal {
+  width: 0;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: .45vw;
+}
+
+.simplebar-scrollbar:before {
+  background: var(--main-button-color);
+}
+

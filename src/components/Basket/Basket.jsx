@@ -1,6 +1,6 @@
-import {
-  useState,
-} from 'react';
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
+import './simplebar.css';
 
 import Info from '../Info/Info';
 import ProductList from '../ProductList/ProductList';
@@ -15,62 +15,44 @@ const Basket = ({
   price,
   onAddMoreProd,
   ...props
-}) => {
-  const [
-    count,
-    setCount,
-  ] = useState(1);
+}) => (
+  <>
+    <SimpleBar
+      style={{
+        maxHeight: '25vw',
+      }}
+      autoHide={false}
+      forceVisible={false}
 
-  const scroll = val => {
-    // console.log(event);
-    console.log(event.deltaY);
-    // const curent = document.querySelector(`.${val}`).style;
-    // console.log(curent);
-    document.querySelector(`.${val}`).style.transform =
-      `translateY(${count * 10}vw`;
-    // const productList = document.querySelector('.productList');
-    setCount(event.deltaY > 0 ? count + 1 : count - 1);
-  };
-
-
-  return (
-    <>
-      <div
-        className={styles.scrollWrapper}
-      >
-        <div className={styles.productListWrapper}>
-          <div
-            className={styles.productList}
-            onWheel={() => scroll(styles.productList)}
-          >
-            <Info
-              styles={styles}
-            />
-            <ProductList
-              styles={styles}
-              products={products}
-            />
-            {props.productCount < 5 ?
-              <AddProducts
-                styles={styles}
-                onAddMoreProd={onAddMoreProd}
-              /> :
-              ''
-            }
-          </div>
-        </div>
-        <div className={styles.scroll}>
-          <div className={styles.scrollThumb}></div>
-        </div>
+      classNames={{
+        scrollbar: 'simplebar-scrollbar',
+        track: 'simplebar-track',
+      }}
+    >
+      <div className={styles.productList}>
+        <Info styles={styles} />
+        <ProductList
+          styles={styles}
+          products={products}
+        />
+        {props.productCount < 5 ?
+          <AddProducts
+            styles={styles}
+            onAddMoreProd={onAddMoreProd}
+          /> :
+          ''
+        }
       </div>
-      <SubmitButton
-        blockStyle={styles.blockMarginsVerySmall}
-        value={`Submit and Pay ${price} USD`}
-        bgColor="success"
-      />
-      <SecurePayment />
-    </>
-  );
-};
+    </SimpleBar>
+
+    <SubmitButton
+      blockStyle={styles.blockMarginsVerySmall}
+      value={`Submit and Pay ${price} USD`}
+      bgColor="success"
+    />
+    <SecurePayment />
+  </>
+);
+
 
 export default Basket;

@@ -6,7 +6,10 @@ const AddProducts = ({
   onAddMoreProd,
   ...props
 }) => (
-  <div className={props.styles.blockMarginsSmall}>
+  <div className={classNames(
+    props.styles.addMoreProducts,
+    props.styles.blockMarginsSmall,
+  )}>
     <button
       type="button"
       onClick={() => onAddMoreProd()}
