@@ -14,6 +14,7 @@ const Basket = ({
   products,
   price,
   onAddMoreProd,
+  onDeleteProd,
   ...props
 }) => (
   <>
@@ -34,6 +35,7 @@ const Basket = ({
         <ProductList
           styles={styles}
           products={products}
+          onDeleteProd={onDeleteProd}
         />
         {props.productCount < 5 ?
           <AddProducts

@@ -6,6 +6,7 @@ import DeleteButton from '../DeleteButton/DeleteButton';
 const Product = ({
   styles,
   product,
+  onDeleteProd,
 }) => (
   <div className={styles.blockMargins}>
     <div className={classNames(
@@ -16,7 +17,11 @@ const Product = ({
         {product.name}
       </h2>
       {
-        product.isToDelete ? <DeleteButton /> : ''
+        product.isToDelete ?
+          <DeleteButton
+            prodictId={product.id}
+            onDeleteProd={onDeleteProd}
+          /> : ''
       }
     </div>
     <label>

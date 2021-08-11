@@ -26,6 +26,10 @@ const Form = () => {
       });
     }
 
+    if (newProducts.length === 1) {
+      newProducts[0].isToDelete = false;
+    };
+
     setProducts(newProducts);
   };
 
@@ -45,6 +49,12 @@ const Form = () => {
   ] = useState(false);
 
   const onAddMoreProd = () => setIsAddProd(!isAddProd);
+
+  const onDeleteProd = id => {
+    const newProductList = products.filter(product => product.id !== id);
+
+    setProducts(newProductList);
+  };
 
   const [
     productsList,
@@ -72,6 +82,7 @@ const Form = () => {
           products={products}
           price={price}
           onAddMoreProd={onAddMoreProd}
+          onDeleteProd={onDeleteProd}
           productCount={products.length}
         />
         :

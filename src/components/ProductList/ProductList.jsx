@@ -5,6 +5,7 @@ import Product from '../Product/Product';
 const ProductList = ({
   styles,
   products,
+  onDeleteProd,
 }) => (
   <div className={classNames(
     styles.blockMargins,
@@ -15,6 +16,7 @@ const ProductList = ({
           key={product.id}
           styles={styles}
           product={product}
+          onDeleteProd={onDeleteProd}
         />
       )
     )}
