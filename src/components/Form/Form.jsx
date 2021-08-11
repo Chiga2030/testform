@@ -51,9 +51,19 @@ const Form = () => {
   const onAddMoreProd = () => setIsAddProd(!isAddProd);
 
   const onDeleteProd = id => {
-    const newProductList = products.filter(product => product.id !== id);
+    const newProductsList = products.filter(product => product.id !== id);
 
-    setProducts(newProductList);
+    setProducts(newProductsList);
+
+    if (newProductsList.length > 1) {
+      setPrice(
+        (22 - (2 * (newProductsList.length - 2))) * newProductsList.length
+      );
+    } else if (newProductsList.length < 1) {
+      setPrice(0);
+    } else {
+      setPrice(defaultPrice);
+    };
   };
 
   const [

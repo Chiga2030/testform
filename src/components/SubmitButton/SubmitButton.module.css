@@ -14,6 +14,10 @@
   background: var(--main-button-color);
 }
 
+.bgColor-disabled {
+  background: var(--disabled-button-color);
+}
+
 .bgColor-fail {
   background: var(--additional-button-color);
 }

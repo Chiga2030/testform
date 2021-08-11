@@ -49,8 +49,10 @@ const Basket = ({
 
     <SubmitButton
       blockStyle={styles.blockMarginsVerySmall}
-      value={`Submit and Pay ${price} USD`}
-      bgColor="success"
+      value={price === 0 ?
+        'Add more products, please' :
+        `Submit and Pay ${price} USD`}
+      bgColor={price === 0 ? 'disabled' : 'success'}
     />
     <SecurePayment />
   </>
