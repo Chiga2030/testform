@@ -10,7 +10,7 @@ import loader from './img/loader.svg';
 
 const SubmitButton = ({
   value,
-  bgColor,
+  isDisable,
   onButtonClick,
   ...props
 }) => {
@@ -23,13 +23,15 @@ const SubmitButton = ({
     isLoading: true,
   });
 
-
+  console.log(isDisable);
   return (
     <div className={props.blockStyle}>
       <button
         className={classNames(
           styles.button,
-          styles[`bgColor-${bgColor}`],
+          {
+            [styles.bgColorSuccess]: isDisable,
+          },
         )}
         type="button"
         onClick={() => {

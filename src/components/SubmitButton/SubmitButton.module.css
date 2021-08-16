@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-.bgColor-success {
+.bgColorSuccess {
   background: var(--main-button-color);
 }
 

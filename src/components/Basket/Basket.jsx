@@ -53,7 +53,7 @@ const Basket = ({
       value={price === 0 ?
         'Add more products, please' :
         `Submit and Pay ${price} USD`}
-      bgColor={price === 0 ? 'disabled' : 'success'}
+      isDisable={price < 0 ? false : !price}
       onButtonClick={onSubmitAndPay}
     />
     <SecurePayment />
