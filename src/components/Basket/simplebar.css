@@ -1,6 +1,7 @@
 .simplebar-scrollbar {
   background: var(--main-button-color);
   border-radius: 2vw;
+  height: 4vw!important;
 }
 
 .simplebar-track {
@@ -14,7 +15,7 @@
 }
 
 .simplebar-track.simplebar-vertical {
-  width: .45vw;
+  width: .25vw;
 }
 
 .simplebar-scrollbar:before {
