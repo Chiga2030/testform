@@ -24,7 +24,7 @@ const AddProductForm = ({
       blockStyle={styles.blockMarginsLarge}
       value="Continue"
       bgColor="success"
-      onSubmitMoreProd={onSubmitMoreProd}
+      onButtonClick={onSubmitMoreProd}
     />
   </>
 );

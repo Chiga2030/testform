@@ -5,7 +5,7 @@ import styles from './SubmitButton.module.css';
 const SubmitButton = ({
   value,
   bgColor,
-  onSubmitMoreProd,
+  onButtonClick,
   ...props
 }) => (
   <div className={props.blockStyle}>
@@ -15,7 +15,7 @@ const SubmitButton = ({
         styles[`bgColor-${bgColor}`],
       )}
       type="button"
-      onClick={onSubmitMoreProd}
+      onClick={onButtonClick}
     >
       {value}
     </button>
