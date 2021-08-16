@@ -21,3 +21,18 @@
 .bgColor-fail {
   background: var(--additional-button-color);
 }
+
+.loader {
+  height: 75%;
+  animation: loader 1.5s infinite normal linear;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

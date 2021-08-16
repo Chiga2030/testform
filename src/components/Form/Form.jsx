@@ -81,6 +81,10 @@ const Form = () => {
     setIsAddProd(false);
   };
 
+  const onSubmitAndPay = () => {
+    setTimeout(() => console.log('test'), 2000);
+  };
+
 
   return (
     <form
@@ -93,6 +97,7 @@ const Form = () => {
           price={price}
           onAddMoreProd={onAddMoreProd}
           onDeleteProd={onDeleteProd}
+          onSubmitAndPay={onSubmitAndPay}
           productCount={products.length}
         />
         :

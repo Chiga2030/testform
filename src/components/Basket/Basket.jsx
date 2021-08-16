@@ -15,6 +15,7 @@ const Basket = ({
   price,
   onAddMoreProd,
   onDeleteProd,
+  onSubmitAndPay,
   ...props
 }) => (
   <>
@@ -53,6 +54,7 @@ const Basket = ({
         'Add more products, please' :
         `Submit and Pay ${price} USD`}
       bgColor={price === 0 ? 'disabled' : 'success'}
+      onButtonClick={onSubmitAndPay}
     />
     <SecurePayment />
   </>
