@@ -23,14 +23,15 @@ const SubmitButton = ({
     isLoading: true,
   });
 
-  console.log(isDisable);
   return (
     <div className={props.blockStyle}>
       <button
+        disabled={isDisable}
         className={classNames(
           styles.button,
           {
-            [styles.bgColorSuccess]: isDisable,
+            [styles.bgColorSuccess]: !isDisable,
+            [styles.disabled]: isDisable,
           },
         )}
         type="button"

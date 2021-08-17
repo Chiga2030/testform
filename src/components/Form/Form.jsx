@@ -8,6 +8,12 @@ import {
   defaultPrice,
 } from './defaultStore';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+
 import styles from './Form.module.css';
 
 import Basket from '../Basket/Basket';
@@ -87,27 +93,39 @@ const Form = () => {
 
 
   return (
-    <form
-      className={styles.form}
-    >
-      {!isAddProd ?
-        <Basket
-          styles={styles}
-          products={products}
-          price={price}
-          onAddMoreProd={onAddMoreProd}
-          onDeleteProd={onDeleteProd}
-          onSubmitAndPay={onSubmitAndPay}
-          productCount={products.length}
-        />
-        :
-        <AddProductForm
-          produstsList={productsList}
-          setProdustsList={setProductsList}
-          onSubmitMoreProd={onSubmitMoreProd}
-        />
-      }
-    </form>
+    <Router>
+      <form
+        className={styles.form}
+      >
+        <Switch>
+          <Route exact path="/">
+            {!isAddProd ?
+              <Basket
+                styles={styles}
+                products={products}
+                price={price}
+                onAddMoreProd={onAddMoreProd}
+                onDeleteProd={onDeleteProd}
+                onSubmitAndPay={onSubmitAndPay}
+                productCount={products.length}
+              />
+              :
+              <AddProductForm
+                produstsList={productsList}
+                setProdustsList={setProductsList}
+                onSubmitMoreProd={onSubmitMoreProd}
+              />
+            }
+          </Route>
+          <Route path="/paymentsuccess">
+            <p>paymentsuccess</p>
+          </Route>
+          <Route path="/paymenterror">
+            <p>paymenterror</p>
+          </Route>
+        </Switch>
+      </form>
+    </Router>
   );
 };
 
