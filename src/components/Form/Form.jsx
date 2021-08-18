@@ -18,6 +18,7 @@ import styles from './Form.module.css';
 
 import Basket from '../Basket/Basket';
 import AddProductForm from '../AddProductForm/AddProductForm';
+import StatusPay from '../StatusPay/StatusPay';
 
 
 const Form = () => {
@@ -53,6 +54,11 @@ const Form = () => {
     isAddProd,
     setIsAddProd,
   ] = useState(false);
+
+  const [
+    isSucessfull,
+    setIsSucessfull,
+  ] = useState(true);
 
   const onAddMoreProd = () => setIsAddProd(!isAddProd);
 
@@ -90,7 +96,12 @@ const Form = () => {
   const history = useHistory();
 
   const onSubmitAndPay = () => {
-    setTimeout(() => history.push('/paymentsuccess'), 2000);
+    setTimeout(() => {
+      setIsSucessfull(!isSucessfull);
+      if (isSucessfull) {
+        return history.push('/paymentsuccess');
+      } return history.push('/paymenterror');
+    }, 2000);
   };
 
 
@@ -119,10 +130,10 @@ const Form = () => {
           }
         </Route>
         <Route path="/paymentsuccess">
-          <p>paymentsuccess</p>
+          <StatusPay status={isSucessfull} />
         </Route>
         <Route path="/paymenterror">
-          <p>paymenterror</p>
+          <StatusPay status={isSucessfull} />
         </Route>
       </Switch>
     </form>
