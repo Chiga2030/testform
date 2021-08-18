@@ -36,6 +36,7 @@ const SubmitButton = ({
           styles.button,
           {
             [styles.bgColorSuccess]: !isDisable,
+            [styles.bgColorFail]: props.bgColor === 'fail',
             [styles.disabled]: isDisable,
           },
         )}

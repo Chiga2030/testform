@@ -23,7 +23,7 @@
   background: var(--disabled-button-color);
 }
 
-.bgColor-fail {
+.bgColorFail {
   background: var(--additional-button-color);
 }
 

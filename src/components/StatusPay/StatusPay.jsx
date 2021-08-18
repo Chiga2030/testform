@@ -1,5 +1,4 @@
 import {
-  Link,
   useHistory,
 } from 'react-router-dom';
 
@@ -23,18 +22,18 @@ const StatusPay = ({
 
   const onSubmit = () => history.push('/');
 
+
   return (
     <>
       <Header
-        title={status ? message.success.title : message.fail.title}
-        subtitle={status ? message.success.subtitle : message.fail.subtitle}
+        title={message[Number(status)].title}
+        subtitle={message[Number(status)].subtitle}
       />
-      <Link to="/">
-        <SubmitButton
-          value="Back"
-          onButtonClick={onSubmit}
-        />
-      </Link>
+      <SubmitButton
+        value={message[Number(status)].buttonValue}
+        onButtonClick={onSubmit}
+        bgColor={message[Number(status)].buttonBgColor}
+      />
     </>
   );
 };
