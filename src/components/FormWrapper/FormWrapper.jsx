@@ -1,11 +1,17 @@
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
+
 import styles from './FormWrapper.module.css';
 
 import Form from '../Form/Form';
 
 const FormWrapper = () => (
-  <div className={styles.wrapper}>
-    <Form />
-  </div>
+  <Router>
+    <div className={styles.wrapper}>
+      <Form />
+    </div>
+  </Router>
 );
 
 export default FormWrapper;

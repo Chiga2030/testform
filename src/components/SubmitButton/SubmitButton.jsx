@@ -1,3 +1,7 @@
+// import {
+//   Link,
+// } from 'react-router-dom';
+
 import {
   useState,
 } from 'react';
@@ -25,6 +29,7 @@ const SubmitButton = ({
 
   return (
     <div className={props.blockStyle}>
+      {/* <Link to="/paymentsuccess"> */}
       <button
         disabled={isDisable}
         className={classNames(
@@ -46,6 +51,7 @@ const SubmitButton = ({
             value
         }
       </button>
+      {/* </Link> */}
     </div>
   );
 };
