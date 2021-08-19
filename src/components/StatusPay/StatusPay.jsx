@@ -6,9 +6,11 @@ import {
   useState,
 } from 'react';
 
+import styles from './StatusPay.module.css';
+
 import defaultMessage from './defaultMessage';
 
-import imgSuccess from './img/creditCardSucces.svg';
+import imgSuccess from './img/creditCardSucces.png';
 import imgFail from './img/creditCardFail.png';
 
 import Header from '../Header/Header';
@@ -28,16 +30,26 @@ const StatusPay = ({
 
   return (
     <>
-      <Header
-        title={message[Number(status)].title}
-        subtitle={message[Number(status)].subtitle}
-      />
-      <img src={status ? imgSuccess : imgFail} alt="" />
-      <SubmitButton
-        value={message[Number(status)].buttonValue}
-        onButtonClick={onSubmit}
-        bgColor={message[Number(status)].buttonBgColor}
-      />
+      <div className={styles.headerWrapper}>
+        <Header
+          title={message[Number(status)].title}
+          subtitle={message[Number(status)].subtitle}
+        />
+      </div>
+      <div className={styles.imgWrapper}>
+        <img
+          className={styles.img}
+          src={!status ? imgSuccess : imgFail}
+          alt=""
+        />
+      </div>
+      <div className={styles.buttonWrapper}>
+        <SubmitButton
+          value={message[Number(status)].buttonValue}
+          onButtonClick={onSubmit}
+          bgColor={message[Number(status)].buttonBgColor}
+        />
+      </div>
     </>
   );
 };
