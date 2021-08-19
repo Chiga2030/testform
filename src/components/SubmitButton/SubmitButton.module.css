@@ -12,15 +12,11 @@
 
 .disabled {
   cursor: not-allowed;
-  background: var(--additional-button-color);
+  background: var(--disabled-button-color);
 }
 
 .bgColorSuccess {
   background: var(--main-button-color);
-}
-
-.bgColor-disabled {
-  background: var(--disabled-button-color);
 }
 
 .bgColorFail {
