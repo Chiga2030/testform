@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://chiga2030.github.io/testform/static/css/main.7b16bda2.chunk.css",
-    "main.js": "https://chiga2030.github.io/testform/static/js/main.6820eb82.chunk.js",
-    "main.js.map": "https://chiga2030.github.io/testform/static/js/main.6820eb82.chunk.js.map",
+    "main.js": "https://chiga2030.github.io/testform/static/js/main.0ee00c1a.chunk.js",
+    "main.js.map": "https://chiga2030.github.io/testform/static/js/main.0ee00c1a.chunk.js.map",
     "runtime-main.js": "https://chiga2030.github.io/testform/static/js/runtime-main.2d446e40.js",
     "runtime-main.js.map": "https://chiga2030.github.io/testform/static/js/runtime-main.2d446e40.js.map",
     "static/css/2.a2825889.chunk.css": "https://chiga2030.github.io/testform/static/css/2.a2825889.chunk.css",
@@ -27,6 +27,6 @@
     "static/css/2.a2825889.chunk.css",
     "static/js/2.1bdca3b1.chunk.js",
     "static/css/main.7b16bda2.chunk.css",
-    "static/js/main.6820eb82.chunk.js"
+    "static/js/main.0ee00c1a.chunk.js"
   ]
 }
