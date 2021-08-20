@@ -1,0 +1,39 @@
+.button {
+  border-radius: .95vw;
+  border: none;
+  color: var(--text-button-color);
+  cursor: pointer;
+  font-size: 1.1vw;
+  font-weight: 700;
+  height: 2.8vw;
+  margin: 0;
+  width: 100%;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background: var(--disabled-button-color);
+}
+
+.bgColorSuccess {
+  background: var(--main-button-color);
+}
+
+.bgColorFail {
+  background: var(--additional-button-color);
+}
+
+.loader {
+  height: 75%;
+  animation: loader 1.5s infinite normal linear;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

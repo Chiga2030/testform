@@ -1,0 +1,94 @@
+.form {
+  background: var(--main-bg-color);
+  border-radius: 0 2vw 2vw;
+  height: auto;
+  padding: 2.24vw 2.12vw;
+  width: 23.24vw;
+  box-shadow: .5vw .5vw 3vw var(--shadow-color);
+  overflow: hidden;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.13vw;
+  margin: 0 .4vw 0 0;
+}
+
+.subtitle {
+  font-size: 1vw;
+  margin: 0;
+}
+
+.productListWrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.productList {
+  height: 24.3vw;
+  overflow: visible;
+  transition: transform linear 1s;
+  transform: translateY(0);
+}
+
+.scrollWrapper {
+  overflow: visible;
+  position: relative;
+}
+
+.addMoreProducts {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid var(--stroke-color);
+  color: var(--main-text-color);
+  display: block;
+  font-size: .9vw;
+  letter-spacing: .075vw;
+  margin: 0 0 1vw;
+  padding: 0 0 .5vw;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--placeholder-text-color);
+}
+
+.blockMargins {
+  margin-bottom: 1.6vw;
+}
+
+.blockMarginsSmall {
+  margin-bottom: 1.1vw;
+}
+
+.blockMarginsVerySmall {
+  margin-bottom: .7vw;
+}
+
+.infoTitleMargin {
+  margin-bottom: .9vw;
+}
+
+.infoSubtitleMargin {
+  margin-bottom: .7vw;
+}
+
+.productTitleMargin {
+  margin-bottom: .95vw;
+}
+
+.productSubtitleMargin {
+  margin-bottom: 1.05vw;
+}
+
+.addProductButtonMargin {
+  margin-bottom: .7vw;
+}
