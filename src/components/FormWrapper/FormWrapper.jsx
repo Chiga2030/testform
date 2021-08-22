@@ -7,7 +7,7 @@ import styles from './FormWrapper.module.css';
 import Form from '../Form/Form';
 
 const FormWrapper = () => (
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router basename="./testform">
     <div className={styles.wrapper}>
       <Form />
     </div>
