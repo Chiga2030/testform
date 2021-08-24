@@ -130,10 +130,10 @@ const Form = () => {
           }
         </Route>
         <Route path="/paymentsuccess">
-          <StatusPay status={isSucessfull} />
+          <StatusPay status={true} />
         </Route>
         <Route path="/paymenterror">
-          <StatusPay status={isSucessfull} />
+          <StatusPay status={false} />
         </Route>
       </Switch>
     </form>

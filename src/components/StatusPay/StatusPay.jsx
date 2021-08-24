@@ -39,7 +39,7 @@ const StatusPay = ({
       <div className={styles.imgWrapper}>
         <img
           className={styles.img}
-          src={!status ? imgSuccess : imgFail}
+          src={status ? imgSuccess : imgFail}
           alt=""
         />
       </div>
