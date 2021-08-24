@@ -6,6 +6,10 @@
   width: 23.24vw;
   box-shadow: .5vw .5vw 3vw var(--shadow-color);
   overflow: hidden;
+  min-height: 29.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .titleWrapper {

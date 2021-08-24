@@ -1,9 +1,4 @@
-.headerWrapper {
-  margin-bottom: 3vw;
-}
-
 .imgWrapper {
-  margin-bottom: 4.6vw;
   display: flex;
   justify-content: center;
 }
@@ -13,5 +8,5 @@
 }
 
 .buttonWrapper {
-  margin-bottom: 1.5vw;
+  margin-bottom: 1.9vw;
 }
